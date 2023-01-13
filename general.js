@@ -10,6 +10,18 @@ window.addEventListener("scroll", function () {
 
 // s
 
+// loading
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild("loader");
+  });
+});
+
 // function scrollFunction() {
 //   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
 //     document.getElementById("navv").style.color = "red";
