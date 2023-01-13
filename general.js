@@ -10,29 +10,7 @@ window.addEventListener("scroll", function () {
 
 // s
 
-// loading
 
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-
-  loader.classList.add("loader-hidden");
-
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild("loader");
-  });
-});
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-//     document.getElementById("navv").style.color = "red";
-//     // document.getElementById("nav").style.borderBottom = "1px solid #a0a0a099";
-//     // document.getElementById("nav").style.backgroundColor =
-//     //   "rgba(255, 255, 255, 0.426)";
-//   } else {
-//     document.getElementById("shrink").style.fontSize = "70px";
-//     // document.getElementById("nav").style.borderBottom = "0px solid #a0a0a099";
-//   }
-// }
 
 function showPwL() {
   const p = document.getElementById("password");
